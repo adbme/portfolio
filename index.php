@@ -20,18 +20,18 @@
 <body class="bg-gradient-to-br from-[#1e1b2e] to-[#3a1b47] text-white min-h-screen flex flex-col">
 
     <!-- logo   -->
-    <div class="h-screen flex items-center justify-center">
+    <div class="min-h-screen flex items-center justify-center">
 
         <div class="z-50">
             <div
-                class="transition-all absolute m-4 left-0 top-0 bg-gradient w-12 h-12 max-sm:w-8 max-sm:h-8 flex items-center justify-center rounded-lg">
+                class="transition-all fixed m-4 left-0 top-0 bg-gradient w-12 h-12 max-sm:w-8 max-sm:h-8 flex items-center justify-center rounded-lg">
                 <span class="text-white font-extrabold text-[20px] max-sm:text-[10px]">
                     AB
                 </span>
             </div>
 
             <div
-                class="absolute m-4 left-0 top-0 transition-all duration-300 hover:opacity-0 bg-white w-12 h-12 max-sm:w-8 max-sm:h-8 flex items-center justify-center rounded-lg">
+                class="fixed m-4 left-0 top-0 transition-all duration-300 hover:opacity-0 bg-white w-12 h-12 max-sm:w-8 max-sm:h-8 flex items-center justify-center rounded-lg">
                 <span class="gradient-text font-extrabold text-[20px] max-sm:text-[10px]">
                     AB
                 </span>
@@ -48,11 +48,11 @@
             <div class="flex flex-col xl:flex-row items-center justify-between space-y-8 xl:space-y-0">
                 <!-- Sidebar -->
                 <div
-                    class="flex flex-col items-center space-y-6 xl:space-y-8 max-xl:w-full max-xl:absolute max-xl:top-0 max-xl:p-2 m-4">
+                    class="flex md:h-[300px] flex-col items-center justify-center space-y-6 xl:space-y-8 max-xl:w-full max-xl:absolute max-xl:top-0 max-xl:p-2 m-4">
 
                     <!-- Icons -->
-                    <div class="flex flex-row xl:flex-col space-x-10 xl:space-x-0  xl:space-y-10">
-                        <a href="#" class="text-white text-2xl hover:text-[#e75d4e]"><svg
+                    <div class="md:fixed mt-0 flex flex-row xl:flex-col space-x-10 xl:space-x-0 xl:space-y-10">
+                        <a href="#projects" class="text-white text-2xl hover:text-[#e75d4e]"><svg
                                 class="w-6 fill-[currentColor]" viewBox="0 0 640 512"
                                 xmlns="http://www.w3.org/2000/svg">
 
@@ -253,11 +253,16 @@
 
     html {
             scroll-behavior: smooth;
+            
         }
 
         html::-webkit-scrollbar {
   display: none;
 }
+
+body {
+    /* overflow: hidden;*/
+} 
 
 html {
   -ms-overflow-style: none;  /* IE and Edge */
