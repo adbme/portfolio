@@ -1,3 +1,8 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+
 <body id="body" class="bg-gradient-to-br from-[#1e1b2e] to-[#3a1b47] text-white min-h-screen flex flex-col">
     <span id="loader" class="loader"></span>
 
@@ -34,8 +39,10 @@
                     class="flex md:h-[300px] flex-col items-center justify-center space-y-6 xl:space-y-8 max-xl:w-full max-xl:absolute max-xl:top-0 max-xl:p-2 m-4">
 
                     <!-- Icons -->
-                    <div id="iconsDiv" class="z-50 fixed mt-0 flex flex-row xl:flex-col space-x-10 xl:space-x-0 xl:space-y-10">
-                        <a data-tooltip-target="tooltip-projects" data-tooltip-placement="right" href="#projects" id="projects-link" class="text-white text-2xl hover:text-[#e75d4e]">
+                    <div id="iconsDiv"
+                        class="z-50 fixed mt-0 flex flex-row xl:flex-col space-x-10 xl:space-x-0 xl:space-y-10">
+                        <a data-tooltip-target="tooltip-projects" data-tooltip-placement="right" href="#projects"
+                            id="projects-link" class="text-white text-2xl hover:text-[#e75d4e]">
                             <svg class="w-6" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -43,20 +50,24 @@
                                         <stop offset="100%" style="stop-color:#FF875E;stop-opacity:1" />
                                     </linearGradient>
                                 </defs>
-                                <path fill="currentColor" d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"></path>
+                                <path fill="currentColor"
+                                    d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z">
+                                </path>
                             </svg>
                         </a>
-                        
-                       
-                        
-                        <div id="tooltip-projects" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            
+
+
+
+                        <div id="tooltip-projects" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+
                             Projects
                             <div class="tooltip-arrow" data-popper-arrow></div>
                         </div>
 
 
-                        <a data-tooltip-target="tooltip-me" data-tooltip-placement="right" href="#me" class="text-white text-2xl hover:text-[#e75d4e]">
+                        <a data-tooltip-target="tooltip-me" data-tooltip-placement="right" href="#me"
+                            class="text-white text-2xl hover:text-[#e75d4e]">
                             <svg class="w-6 fill-[currentColor]" viewBox="0 0 512 512"
                                 xmlns="http://www.w3.org/2000/svg">
 
@@ -68,31 +79,15 @@
                             </svg>
                         </a>
 
-                        <div id="tooltip-me" role="tooltip" class="absolute w-[90px] z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            
+                        <div id="tooltip-me" role="tooltip"
+                            class="absolute w-[90px] z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+
                             About me
                             <div class="tooltip-arrow" data-popper-arrow></div>
                         </div>
 
-                        <a data-tooltip-target="tooltip-github" data-tooltip-placement="right" href="#github" class="text-white text-2xl hover:text-[#e75d4e]">
-                            <svg class="w-6 fill-[currentColor]" viewBox="0 0 496 512"
-                                xmlns="http://www.w3.org/2000/svg">
-
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                                </path>
-
-                            </svg>
-                            </i></a>
-
-                            <div id="tooltip-github" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            
-                                Github
-                                <div class="tooltip-arrow" data-popper-arrow></div>
-                            </div>
-
-
-                        <a data-tooltip-target="tooltip-hobby" data-tooltip-placement="right" href="#hobby" class="text-white text-2xl hover:text-[#e75d4e]">
+                        <a data-tooltip-target="tooltip-hobbies" data-tooltip-placement="right" href="#hobbies"
+                            class="text-white text-2xl hover:text-[#e75d4e]">
                             <svg class="w-6 fill-[currentColor]" viewBox="0 0 448 512"
                                 xmlns="http://www.w3.org/2000/svg">
 
@@ -103,9 +98,10 @@
                             </svg>
                         </a>
 
-                        <div id="tooltip-hobby" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                            
-                            hobby
+                        <div id="tooltip-hobbies" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+
+                            hobbies
                             <div class="tooltip-arrow" data-popper-arrow></div>
                         </div>
                     </div>
@@ -126,24 +122,31 @@
                         <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
                             <a href="#projects"
                                 class="box-shadow-custom h-16 w-auto flex items-center gap-2 text-white px-4 py-2 rounded-full font-semibold bg-gradient transition-all sm:text-sm md:text-base">
-                              
 
-                               Scroll down
-  <svg class="w-4" width="47" height="67" viewBox="0 0 47 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="2" y="2" width="43" height="63" rx="21.5" stroke="white" stroke-width="4"/>
-                                    <path d="M21 17C21 15.3431 22.3431 14 24 14V14C25.6569 14 27 15.3431 27 17V24C27 25.6569 25.6569 27 24 27V27C22.3431 27 21 25.6569 21 24V17Z" fill="url(#paint0_linear_38_15)"/>
+
+                                Scroll down
+                                <svg class="w-4" width="47" height="67" viewBox="0 0 47 67" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="2" width="43" height="63" rx="21.5" stroke="white"
+                                        stroke-width="4" />
+                                    <path
+                                        d="M21 17C21 15.3431 22.3431 14 24 14V14C25.6569 14 27 15.3431 27 17V24C27 25.6569 25.6569 27 24 27V27C22.3431 27 21 25.6569 21 24V17Z"
+                                        fill="url(#paint0_linear_38_15)" />
                                     <defs>
-                                    <linearGradient id="paint0_linear_38_15" x1="24" y1="14" x2="24" y2="27" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FF3F47"/>
-                                    <stop offset="1" stop-color="#FF875E"/>
-                                    </linearGradient>
+                                        <linearGradient id="paint0_linear_38_15" x1="24" y1="14" x2="24" y2="27"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF3F47" />
+                                            <stop offset="1" stop-color="#FF875E" />
+                                        </linearGradient>
                                     </defs>
-                                    </svg>
-                               
-                                    <svg class="w-4 fill-[white]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
-                               
-                                        </svg>
+                                </svg>
+
+                                <svg class="w-4 fill-[white]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                                    </path>
+
+                                </svg>
 
                             </a>
                             <a href="#"
@@ -183,12 +186,12 @@
 
                             </a>
 
-                            
+
                         </div>
 
-                        
 
-                        
+
+
                     </div>
 
                     <!-- Placeholder Image -->
@@ -204,16 +207,16 @@
 
                         <img src="img/homePhoto.png" class="h-full mt-[-70px] w-full object-contain homePhoto" alt="">
 
-                     
+
                     </div>
-                    
-                </div> 
+
+                </div>
             </div>
-           
+
         </div>
 
-       
-        
+
+
 
         <img src="img/backgroundLed.png" class="object-contain h-screen w-screen fixed z-[-10] animate-pulse" alt="">
     </div>
@@ -222,18 +225,16 @@
         <?php
 
         require "projects.php"
-        
-        ?>
+
+            ?>
     </div>
-    <div id="me" class="bg-blue-200 h-screen flex items-center justify-center">
-        me
+    <div id="me" class=" h-screen flex items-center justify-center">
+
+        <?php require "me.php" ?>
     </div>
 
-    <div id="github" class="bg-green-200 h-screen flex items-center justify-center">
-        github
-    </div>
-    <div id="hobby" class="bg-purple-200 h-screen flex items-center justify-center">
-        hobby
+    <div id="hobbies" class="h-screen flex items-center justify-center">
+        <?php require "hobbies.php" ?>
     </div>
 
 </body>
@@ -241,8 +242,13 @@
 
 
 <style>
-    * {
+    body {
         font-family: "Rubik", sans-serif;
+    }
+
+    .fira-code {
+        font-family: 'Fira Code', monospace !important;
+
     }
 
     .gradient-text {
@@ -257,6 +263,12 @@
         transition: background 0.3s ease-in-out, transform 0.3s ease;
         background: linear-gradient(94.35deg, #FF3F47 0.74%, #FF875E 100%);
     }
+
+    .bg-gradient-60 {
+    transition: background 0.3s ease-in-out, transform 0.3s ease;
+    background: linear-gradient(94.35deg, rgba(255, 63, 71, 0.6) 0.74%, rgba(255, 135, 94, 0.6) 100%);
+}
+
 
     a:hover {
         transform: scale(1.05);
@@ -330,105 +342,158 @@
     .loader {
         opacity: 0.8;
         display: none;
-  width: 0;
-  height: 4.8px;
-  position: relative;
-  background: linear-gradient(to right, #FF3F47, #FF875E);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  box-sizing: border-box;
-  animation: animFw 1s linear infinite;
-  position: fixed;
-  top: 0;
-}
-  .loader::after,
-  .loader::before {
-    content: '';
-    width: 10px;
-    height: 1px;
-    background: #FF875E;
-    position: absolute;
-    top: 9px;
-    right: -2px;
-    opacity: 0;
-    transform: rotate(-45deg) translateX(0px);
-    box-sizing: border-box;
-    animation: coli1 0.3s linear infinite;
-  }
-  .loader::before {
-    top: -4px;
-    transform: rotate(45deg);
-    animation: coli2 0.3s linear infinite;
-  }
+        width: 0;
+        height: 4.8px;
+        position: relative;
+        background: linear-gradient(to right, #FF3F47, #FF875E);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        animation: animFw 1s linear infinite;
+        position: fixed;
+        top: 0;
+    }
 
-@keyframes animFw {
-    0% {
-  width: 0;
-}
-    100% {
-  width: 100%;
-}
-  }
+    .loader::after,
+    .loader::before {
+        content: '';
+        width: 10px;
+        height: 1px;
+        background: #FF875E;
+        position: absolute;
+        top: 9px;
+        right: -2px;
+        opacity: 0;
+        transform: rotate(-45deg) translateX(0px);
+        box-sizing: border-box;
+        animation: coli1 0.3s linear infinite;
+    }
 
-  
+    .loader::before {
+        top: -4px;
+        transform: rotate(45deg);
+        animation: coli2 0.3s linear infinite;
+    }
 
-@keyframes coli1 {
-    0% {
-  transform: rotate(-45deg) translateX(0px);
-  opacity: 0.7;
-}
-    100% {
-  transform: rotate(-45deg) translateX(-45px);
-  opacity: 0;
-}
-  }
+    @keyframes animFw {
+        0% {
+            width: 0;
+        }
 
-@keyframes coli2 {
-    0% {
-  transform: rotate(45deg) translateX(0px);
-  opacity: 1;
-}
-    100% {
-  transform: rotate(45deg) translateX(-45px);
-  opacity: 0.7;
-}
-  }
+        100% {
+            width: 100%;
+        }
+    }
+
+
+
+    @keyframes coli1 {
+        0% {
+            transform: rotate(-45deg) translateX(0px);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: rotate(-45deg) translateX(-45px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes coli2 {
+        0% {
+            transform: rotate(45deg) translateX(0px);
+            opacity: 1;
+        }
+
+        100% {
+            transform: rotate(45deg) translateX(-45px);
+            opacity: 0.7;
+        }
+    }
 </style>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+        const editorDiv = document.querySelector('.editor');
+        let isInEditor = false;
+
+        // Vérifie si l'utilisateur est dans la div .editor
+        const checkIfInEditor = () => {
+            isInEditor = editorDiv.contains(document.activeElement);
+        };
+
+        // Attacher un événement de focus pour détecter l'entrée dans la div
+        document.addEventListener('focusin', checkIfInEditor);
+
+        // Attacher un événement de blur pour détecter la sortie de la div
+        document.addEventListener('focusout', checkIfInEditor);
+
+        // Les événements de scroll et de changement de section ne s'exécutent que si l'utilisateur est en dehors de la div .editor
         const sections = document.querySelectorAll('div[id]');
         const links = document.querySelectorAll('a[href^="#"]');
+
+        const applyGradient = (id) => {
+            if (isInEditor) return;  // Si l'utilisateur est dans la div, ne pas appliquer le gradient
+            links.forEach((link) => {
+                const path = link.querySelector('path');
+                if (path) {
+                    if (link.getAttribute('href') === `#${id}`) {
+                        path.setAttribute('fill', 'url(#gradient)');
+                    } else {
+                        path.setAttribute('fill', 'currentColor');
+                    }
+                }
+            });
+        };
+
+        const onScroll = () => {
+            if (isInEditor) return;  // Si l'utilisateur est dans la div, ne pas exécuter le scroll
+
+            let currentSectionId = null;
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            if (currentSectionId) {
+                applyGradient(currentSectionId);
+            }
+        };
+
+        window.addEventListener('scroll', onScroll);
+        onScroll(); // Call onScroll initially to set the active state
+
+        // Le code du second script (scrollToSection et gestion des événements de scroll et de clic) reste similaire
+
         let isScrolling = false;
         let currentSectionIndex = 0;
 
-        // Fonction pour faire défiler vers une section
         const scrollToSection = (index) => {
-            if (index < 0 || index >= sections.length) return;
+            if (index < 0 || index >= sections.length || isInEditor) return; // Ne pas exécuter si on est dans .editor
 
-        isScrolling = true;
-        sections[index].scrollIntoView({ behavior: 'smooth' });
+            isScrolling = true;
+            sections[index].scrollIntoView({ behavior: 'smooth' });
 
-        const hash = `#${sections[index].id}`;
+            const hash = `#${sections[index].id}`;
             if (window.location.hash !== hash) {
                 history.replaceState(null, '', hash);
             }
-        document.getElementById("body").classList.add("no-scroll");
-        document.getElementById("loader").style.display = "inline-block";
-        document.getElementById("iconsDiv").style.pointerEvents = "none";
-        document.getElementById("iconsDiv").style.opacity = "0.5";
+            document.getElementById("body").classList.add("no-scroll");
+            document.getElementById("loader").style.display = "inline-block";
+            document.getElementById("iconsDiv").style.pointerEvents = "none";
+            document.getElementById("iconsDiv").style.opacity = "0.5";
 
-        
-        setTimeout(() => {
-            isScrolling = false;
-            document.getElementById("body").classList.remove("no-scroll");
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("iconsDiv").style.pointerEvents = "auto";
-            document.getElementById("iconsDiv").style.opacity = "1";
-        }, 1000);
-    };
+            setTimeout(() => {
+                isScrolling = false;
+                document.getElementById("body").classList.remove("no-scroll");
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("iconsDiv").style.pointerEvents = "auto";
+                document.getElementById("iconsDiv").style.opacity = "1";
+            }, 1000);
+        };
 
-        // Gestion du scroll avec la molette
         document.addEventListener('wheel', (e) => {
-            if (isScrolling) return;
+            if (isScrolling || isInEditor) return; // Ne pas gérer le scroll si dans .editor
 
             if (e.deltaY > 0 && currentSectionIndex < sections.length - 1) {
                 currentSectionIndex++;
@@ -441,7 +506,6 @@
             scrollToSection(currentSectionIndex);
         });
 
-        // Gestion des clics sur les liens d'ancrage
         links.forEach((link) => {
             link.addEventListener('click', (e) => {
                 e.preventDefault(); // Empêche le comportement par défaut du lien
@@ -451,16 +515,15 @@
                     (section) => section.id === targetId
                 );
 
-                if (targetIndex !== -1) {
+                if (targetIndex !== -1 && !isInEditor) {
                     currentSectionIndex = targetIndex;
                     scrollToSection(currentSectionIndex);
                 }
             });
         });
 
-        // Mise à jour de l'index de section au scroll
         window.addEventListener('scroll', () => {
-            if (isScrolling) return;
+            if (isScrolling || isInEditor) return; // Ne pas gérer le scroll si dans .editor
 
             const newIndex = Array.from(sections).findIndex((section) => {
                 const rect = section.getBoundingClientRect();
@@ -470,7 +533,6 @@
             if (newIndex !== -1 && newIndex !== currentSectionIndex) {
                 currentSectionIndex = newIndex;
 
-                // Mise à jour de l'URL
                 const hash = `#${sections[newIndex].id}`;
                 if (window.location.hash !== hash) {
                     history.replaceState(null, '', hash);
@@ -478,12 +540,13 @@
             }
         });
     });
-</script>
 
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const sections = document.querySelectorAll('div[id]');
         const links = document.querySelectorAll('a[href^="#"]');
+        const editorDiv = document.querySelector('.editor'); // Cibler la div de l'éditeur
 
         const applyGradient = (id) => {
             links.forEach((link) => {
@@ -499,6 +562,11 @@
         };
 
         const onScroll = () => {
+            // Vérifier si l'utilisateur est dans l'éditeur
+            if (editorDiv && editorDiv.contains(document.activeElement)) {
+                return; // Si l'utilisateur est dans l'éditeur, on ne fait rien
+            }
+
             let currentSectionId = null;
 
             sections.forEach((section) => {
