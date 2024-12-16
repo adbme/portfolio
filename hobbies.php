@@ -3,26 +3,25 @@
 $slides = [
     [
         "id" => "1",
-        "title" => "Sports de combat",
+        "title" => "Combat sports",
         "description" => "
-        Passionné par les sports de combat depuis mes 16 ans :
+        Passionate about combat sports since I was 16:
 
-                        <br>
-                        <br>
+<br>
+<br>
 
-                        Kickboxing, muay thaï, MMA, grappling… Ces disciplines ne se résument pas à la force ou à la
-                        violence, elles sont avant tout une quête d'équilibre, de respect, et de maîtrise de soi.
+Kickboxing, Muay Thai, MMA, grappling… These disciplines are not merely about strength or violence; they are, above all, a pursuit of balance, respect, and self-mastery.
 
-                        <br>
-                        <br>
+<br>
+<br>
 
-                        Contrairement aux idées reçues, pratiquer un sport de combat forge des valeurs profondes. On apprend à canaliser sa force, respecter autant ses partenaires
-                        que ses adversaires, la résilience et le calme, la stratégie du combat, et avant tout l'humilité.
+Contrary to common misconceptions, practicing a combat sport instills deep values. You learn to channel your strength, respect both your partners and opponents, develop resilience and calmness, master the strategy of combat, and above all, embrace humility.
 
-                        <br>
-                        <br>
+<br>
+<br>
 
-                        Ces valeurs sont un code d'honneur, et quiquonque ne les respecte pas, ne mérite pas sa place dans ce monde où tout le monde sont égaux.
+These values form a code of honor, and anyone who fails to uphold them does not deserve a place in this world where everyone is equal.
+
                         ",
         "image" => "img/wt.png"
     ],
@@ -109,7 +108,7 @@ $slides = [
                                 <button id="hover-button"
                                     class=" px-8 py-4 border-white hover:bg-white hover:text-[#FF6252] border-2 font-bold rounded-full w-fit flex items-center gap-2 transition-all duration-300 ease-in-out">
 
-                                    Mes skills
+                                    My skills
 
                                     <svg class="w-4 fill-[currentColor]" viewBox="0 0 512 512"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -121,6 +120,8 @@ $slides = [
                                     </svg>
                                 </button>
                             </div>
+
+
 
                         </div>
 
@@ -165,7 +166,7 @@ $slides = [
     </div>
 
     <!-- Navigation -->
-    <div class="nav flex items-start justify-start gap-4 mt-6">
+    <div class="nav flex items-start justify-start gap-4 mt-6 mb-4">
         <button id="prev" class="bg-white text-gray-800 p-4 hover:bg-gray-200 shadow-md rounded-full">
             <svg class="w-5 h-5 fill-current" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -173,23 +174,40 @@ $slides = [
                 </path>
             </svg>
         </button>
-        <button id="next" class="bg-white text-gray-800 p-4 hover:bg-gray-200 shadow-md rounded-full">
+        <div class="flex items-center justify-center">
+
+        
+        <button id="next" class="bg-white text-gray-800 z-40 p-4 hover:bg-gray-200 shadow-md rounded-full">
             <svg class="w-5 h-5 fill-current" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
                 </path>
             </svg>
         </button>
+
+        <button class="p-5 absolute bg-gradient animate-ping rounded">
+
+        </button>
+    
+    </div>
     </div>
 </div>
 
 
-<div id="popup" class="animate__animated animate__fadeIn fixed inset-0 bg-gradient-to-br from-[#1e1b2e]/90 to-[#3a1b47]/90 bg-opacity-90 flex items-center justify-center hidden z-50">
+<div id="popup"
+    class="animate__animated animate__fadeIn fixed inset-0 bg-gradient-to-br from-[#1e1b2e]/90 to-[#3a1b47]/90 bg-opacity-90 flex items-center justify-center hidden z-50">
     <div class="absolute top-5 left-5">
         <!-- Close Button -->
         <button id="close-popup"
-            class="text-white text-xl font-bold bg-red-500 px-4 py-2 rounded-full hover:bg-red-600 transition duration-300">
-            Close
+            class="text-white text-xl fixed font-bold z-[99999] flex items-center justify-center bg-red-500/60 p-2 rounded-full hover:bg-red-600 transition duration-300">
+            <svg class="w-[20px] h-[20px] fill-white" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                </path>
+
+            </svg>
         </button>
     </div>
     <div class="text-center text-white">
@@ -197,6 +215,7 @@ $slides = [
         require 'bubbles.php';
         ?>
     </div>
+
 </div>
 
 <style>
@@ -286,13 +305,35 @@ $slides = [
     const closePopupButton = document.getElementById('close-popup');
     const popup = document.getElementById('popup');
 
+    // Function to update the URL parameter
+    function updateURLParam(param, value) {
+        const url = new URL(window.location);
+        if (value) {
+            url.searchParams.set(param, value);
+        } else {
+            url.searchParams.delete(param);
+        }
+        window.history.replaceState({}, '', url);
+    }
+
     // Event to open the popup
     openPopupButton.addEventListener('click', () => {
         popup.classList.remove('hidden'); // Show popup
+        updateURLParam('skills', 'true'); // Add skills=true to URL
     });
 
     // Event to close the popup
     closePopupButton.addEventListener('click', () => {
         popup.classList.add('hidden'); // Hide popup
+        updateURLParam('skills', null); // Remove skills from URL
+    });
+
+    // On page load, check if skills=true is in the URL
+    window.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('skills') === 'true') {
+            popup.classList.remove('hidden'); // Show popup if skills=true
+        }
     });
 </script>
+

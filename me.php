@@ -102,7 +102,7 @@
 
   </div>
 
-  <div class="tab1Content max-md:text-xs flex p-2 rounded-b-[30px] w-full overflow-y-scroll max-h-[500px]"
+  <div class="tab1Content max-md:text-xs flex p-2 rounded-b-[30px] w-full overflow-y-scroll max-h-[700px]"
     style="background: rgba(30, 30, 30, 0.69); ">
     <div class="linesNumbers w-12 text-right pr-2">
       <?php
@@ -183,9 +183,81 @@
 
   </div>
 
-  <div class="tab2Content max-md:text-xs hidden p-2 rounded-b-[30px] w-full min-h-[500px]"
-    style="background: rgba(30, 30, 30, 0.69);">
-    <h1>test</h1>
+  <div
+    class="tab2Content max-md:text-xs hidden p-2 rounded-b-[30px] w-full min-h-[500px] max-h-[700px] overflow-y-scroll"
+    style="background: rgba(30, 30, 30, 0.69); scrollbar-color: rgba(111, 111, 111, 0.78) #241D29;">
+    <div class="w-full mx-auto h-fit p-6 bg-white rounded-lg shadow-md rubik">
+      <!-- Header Section -->
+      <div class="text-center border-b pb-4 mb-6">
+        <h1 class="text-3xl font-bold text-gray-900">Adil Bouamrioune</h1>
+        <p class="text-gray-600">Je me considère comme <b>"Développeur Bohémien"</b></p>
+        <p class="text-sm text-gray-500 mt-2">Né en 2006 à Lausanne, Suisse</p>
+
+        <div class="flex flex-wrap justify-center gap-4 mt-4 font-bold text-1xl">
+        <a href="?skills=true#hobbies" class="gradient-text flex items-center gap-2">Compétences 
+<svg class="w-[20px] h-[20px] fill-[#FF855D]" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+
+  <path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM320 313.4V176c0-8.8-7.2-16-16-16H166.6c-12.5 0-22.6 10.1-22.6 22.6c0 6 2.4 11.8 6.6 16L184 232l-66.3 66.3C114 302 112 306.9 112 312s2 10 5.7 13.7l36.7 36.7c3.6 3.6 8.5 5.7 13.7 5.7s10-2 13.7-5.7L248 296l33.4 33.4c4.2 4.2 10 6.6 16 6.6c12.5 0 22.6-10.1 22.6-22.6z"></path>
+
+</svg>
+</a>
+        <a href="/#hobbies" class="gradient-text flex items-center gap-2">Loisirs
+        <svg class="w-[20px] h-[20px] fill-[#FF855D]" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+
+<path d="M384 32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H384zM320 313.4V176c0-8.8-7.2-16-16-16H166.6c-12.5 0-22.6 10.1-22.6 22.6c0 6 2.4 11.8 6.6 16L184 232l-66.3 66.3C114 302 112 306.9 112 312s2 10 5.7 13.7l36.7 36.7c3.6 3.6 8.5 5.7 13.7 5.7s10-2 13.7-5.7L248 296l33.4 33.4c4.2 4.2 10 6.6 16 6.6c12.5 0 22.6-10.1 22.6-22.6z"></path>
+
+</svg>
+        </a>
+      </div>
+      </div>
+
+      <!-- Links -->
+      
+
+      <!-- Professional Experience -->
+      <div>
+        <h2 class="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Expérience Professionnelle</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <!-- Job Entry -->
+          <div class="border p-4 rounded-lg bg-gray-50">
+            <h3 class="font-semibold text-lg">Solutions KLÄY</h3>
+            <p class="text-sm text-gray-500">Septembre 2024</p>
+            <p class="text-sm text-gray-800">Apprenti informaticien CFC - Développement d’applications</p>
+            <p class="text-sm text-gray-600 mt-2">PHP, MySQL, plugin WordPress</p>
+          </div>
+
+          <div class="border p-4 rounded-lg bg-gray-50">
+            <h3 class="font-semibold text-lg">Jobtrek</h3>
+            <p class="text-sm text-gray-500">Avril 2024</p>
+            <p class="text-sm text-gray-800">Apprenti informaticien CFC - Développement d'applications</p>
+            <p class="text-sm text-gray-600 mt-2">Laravel, Inertia, Docker, Vue.js, PostgreSQL, Tailwind CSS</p>
+          </div>
+
+          <div class="border p-4 rounded-lg bg-gray-50">
+            <h3 class="font-semibold text-lg">Eva-it</h3>
+            <p class="text-sm text-gray-500">Août 2023</p>
+            <p class="text-sm text-gray-800">Apprenti informaticien CFC - Développement d'applications</p>
+            <p class="text-sm text-gray-600 mt-2">Python (Flask), Angular, MongoDB</p>
+          </div>
+
+          <div class="border p-4 rounded-lg bg-gray-50">
+            <h3 class="font-semibold text-lg">Jobtrek</h3>
+            <p class="text-sm text-gray-500">Août 2022</p>
+            <p class="text-sm text-gray-800">Apprenti informaticien CFC - Développement d'applications</p>
+            <p class="text-sm text-gray-600 mt-2">PHP, JS (OOP), Python, Dart (Flutter), Bootstrap 5, Three.js, MySQL,
+              implémentation et création de maquettes Figma en HTML & CSS, le tout sous Linux</p>
+          </div>
+
+          <div class="border p-4 rounded-lg bg-gray-50 md:col-span-2">
+            <h3 class="font-semibold text-lg">Année de transition et formation</h3>
+            <p class="text-sm text-gray-500">Début août 2021</p>
+            <p class="text-sm text-gray-600 mt-2">Stages : Service Informatique, Ville de Renens, Next Link Solutions,
+              Ville de Prilly, SOI Lausanne, Romanel-sur-Morges, Ville de Lausanne.</p>
+            <p class="text-sm text-gray-600 mt-2">Formation en HTML, CSS, et JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
